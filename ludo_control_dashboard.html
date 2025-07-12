@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PROJEKT LUDO Control Panel</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #111; color: #fff; padding: 20px; }
+        h1 { color: #00ffcc; }
+        label { display: block; margin: 10px 0 5px; }
+        input[type="checkbox"] { margin-right: 8px; }
+        button { margin-top: 20px; padding: 10px 20px; background: #00ffcc; color: #000; border: none; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>PROJEKT LUDO Control Panel</h1>
+
+    <form action="/update_flags" method="post">
+        <label>
+            <input type="checkbox" name="killSwitch"> Kill Switch
+        </label>
+
+        <label>Enable Buttons:</label>
+        <label><input type="checkbox" name="buttonsEnabled" value="0" checked> Button 1</label>
+        <label><input type="checkbox" name="buttonsEnabled" value="1"> Button 2</label>
+        <label><input type="checkbox" name="buttonsEnabled" value="2" checked> Button 3</label>
+        <label><input type="checkbox" name="buttonsEnabled" value="3" checked> Button 4</label>
+        <label><input type="checkbox" name="buttonsEnabled" value="4" checked> Button 5</label>
+        <label><input type="checkbox" name="buttonsEnabled" value="5" checked> Button 6</label>
+
+        <label for="message">Message:</label>
+        <input type="text" id="message" name="message" value="Welcome to PROJEKT LUDO" style="width:100%; padding:8px;">
+
+        <button type="submit">Update Flags</button>
+    </form>
+</body>
+</html>
